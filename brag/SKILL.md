@@ -177,3 +177,12 @@ Hook (2-3s) → Reveal (2-4s) → 2-3 sharp highlights (5-12s) → Punchline/out
 ```
 
 Adapt this. Not every project needs exactly 3 highlights. The pattern is a starting shape, not a template.
+
+---
+
+## Sandboxed / cloud environments
+
+If `npx hyperframes doctor` reports a missing Chrome, or `render` fails with
+`sub_timeline_script_failure` on `cdn.jsdelivr.net` (network allowlist), run
+`bash <skill-dir>/scripts/setup-cloud.sh <output-dir>/composition` once the composition exists.
+It installs headless Chrome and the Hyperframes skills, and vendors GSAP locally.
